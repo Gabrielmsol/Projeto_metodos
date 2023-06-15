@@ -219,7 +219,7 @@ st.text(exp_6)
 st.subheader('O Jogo da vida de Conway!')
 
 with st.form('form2'):
-    rows_cols = st.slider('Qual a dimenção da sua grid?', 0, 1000)
+    rows_cols = st.slider('Qual a dimenção da sua grid?', 0, 100)
     probability = st.slider('Qual a probabilidade das celulas estarem ligadas ?', min_value=0.0, max_value=1.0, step=0.05)
     submit_button = st.form_submit_button('VAI RODAAAA!')
     if submit_button and rows_cols != 0:
