@@ -103,7 +103,7 @@ intro = 'Uma breve introdução sobre quem foi Conway\n' \
         'more bla bla'
 exp_0 = 'Uma breve explicação sobre as regras do jogo\n' \
                 'bla bla bla\n' \
-                'more bla bla bla'
+                'more bla bla bla bla bla'
 
 st.title(title)
 st.subheader('Quem foi Conway?')
