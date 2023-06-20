@@ -224,4 +224,5 @@ with st.form('form2'):
     submit_button = st.form_submit_button('VAI RODAAAA!')
     if submit_button and rows_cols != 0:
         run_da_game(rows_cols, probability)
-        
+
+st.markdown('add link here')
