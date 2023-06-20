@@ -225,4 +225,5 @@ with st.form('form2'):
     if submit_button and rows_cols != 0:
         run_da_game(rows_cols, probability)
 
+st.subheader('Link para download')
 st.markdown('https://drive.google.com/file/d/1R5AscSyugvoo3TKQ5MjTdkF7-C0aqMnx/view?usp=sharing')
