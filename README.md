@@ -4,7 +4,7 @@ faça:
 * pip install -r requirements.txt ;
 * logo apos a instalação faça:
 * streamlit run streamlit_app.py
-* Site final: https://gabrielmsol-projeto-metodos-streamlit-app-6gg1yh.streamlit.app/
+* site : https://game-of-life-ptbr-unb.streamlit.app/
 * Mais instruções : para usar o streamlit, façam todos os textos na aba de text localizada no proprio streamlit_app.py
   nomeie corretamente como:
   * Title -> st.title()
