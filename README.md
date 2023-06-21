@@ -12,4 +12,5 @@ faça:
   * text -> st.text()
   * code -> st.code()
   * latex -> st.latex()
-* Por favor leiam bem os textos, organizei tudo de uma maneira mais legivel ~Gabrielmsol
+* Por favor leiam bem os textos, organizei tudo de uma maneira mais legivel
+* A parte do text pode ser encontrada na linha 102 ~Gabrielmsol
