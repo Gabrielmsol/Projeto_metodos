@@ -111,7 +111,6 @@ texto_0 = 'Na década de 1940, John von Neumann, interessado em estudar como sis
           'O jogo da vida é um autômato celular bidimensional criado por John Conway em 1970.\n'\
           'Cada célula tem até oito células vizinhas fixas e deve assumir um estado (morta ou vida) a\n'\
           'cada etapa da evolução do sistema.'
-
 topico_1 = 'Quem foi John Conway?'
 texto_1 = 'Jhon Horton Conway foi um grande matemático e cientista da computação inglês.\n' \
         'Nascido em Liverpool, passou sua carreira na universidade de Cambridge, onde foi\n' \
