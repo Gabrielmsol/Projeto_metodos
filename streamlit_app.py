@@ -102,72 +102,69 @@ def run_da_game(rows_cols, probability):
 # Text
 title = 'Jogo da vida de Conway'
 topico_0 = 'Introdução'
-texto_0 = 'Na década de 1940, John von Neumann, interessado em estudar como sistemas simples\n'\
-          'podem evoluir de forma complexa e padronizada, criou o conceito de autômato celular.\n'\
-          'Um autômato celular é modelo computacional composto por uma grade de células regular com\n'\
-          'um número finito de dimensões. Cada célula possui um número fixo de vizinhas e assume um\n'\
-          'estado discreto a cada etapa. A evolução do sistema se dá a partir de um conjunto de regras\n'\
-          'que determina o novo estado de uma célula a partir do estado atual de suas vizinhas.\n'\
-          'O jogo da vida é um autômato celular bidimensional criado por John Conway em 1970.\n'\
-          'Cada célula tem até oito células vizinhas fixas e deve assumir um estado (morta ou vida) a\n'\
+texto_0 = 'Na década de 1940, John von Neumann, interessado em estudar como sistemas simples\n' \
+          'podem evoluir de forma complexa e padronizada, criou o conceito de autômato celular.\n' \
+          'Um autômato celular é modelo computacional composto por uma grade de células regular com\n' \
+          'um número finito de dimensões. Cada célula possui um número fixo de vizinhas e assume um\n' \
+          'estado discreto a cada etapa. A evolução do sistema se dá a partir de um conjunto de regras\n' \
+          'que determina o novo estado de uma célula a partir do estado atual de suas vizinhas.\n' \
+          'O jogo da vida é um autômato celular bidimensional criado por John Conway em 1970.\n' \
+          'Cada célula tem até oito células vizinhas fixas e deve assumir um estado (morta ou vida) a\n' \
           'cada etapa da evolução do sistema.'
 topico_1 = 'Quem foi John Conway?'
-texto_1 = 'Jhon Horton Conway foi um grande matemático e cientista da computação inglês.\n' \
-        'Nascido em Liverpool, passou sua carreira na universidade de Cambridge, onde foi\n' \
-        'aluno doutorando e professor e pesquisador. John conway deixou um legaddo duradou,\n' \
-        'nos campos em que atuo, o seu trabalho com o jogo da vida lhe rendeu grandes frutos \n' \
-        'e reconhecimento.'
+texto_1 = 'John Horton Conway foi um grande matemático e cientista da computação inglês.\n' \
+          'Nascido em Liverpool, passou sua carreira na Universidade de Cambridge, onde foi\n' \
+          'aluno doutorando, professor e pesquisador. O trabalho de John Conway com o jogo da vida lhe rendeu grandes frutos e reconhecimento.'
 topico_2 = 'Regras do jogo da vida'
 texto_2 = 'As regras do Jogo da Vida são as seguintes: uma célula viva com menos de dois\n' \
-        'vizinhos vivos morre por solidão; uma célula viva com dois ou três vizinhos vivos\n' \
-        'permanece viva; uma célula viva com mais de três vizinhos vivos morre de \n' \
-        'superpopulação; uma célula morta com exatamente três vizinhos vivos se torna viva.\n' \
-        'Com base nessas regras simples, padrões complexos e interessantes podem surgir no jogo,\n' \
-        'incluindo osciladores,espaçonaves e estruturas estáveis.'
+          'vizinhos vivos morre por solidão; uma célula viva com dois ou três vizinhos vivos\n' \
+          'permanece viva; uma célula viva com mais de três vizinhos vivos morre de \n' \
+          'superpopulação; uma célula morta com exatamente três vizinhos vivos se torna viva.\n' \
+          'Com base nessas regras simples, padrões complexos e interessantes podem surgir no jogo,\n' \
+          'incluindo osciladores, espaçonaves e estruturas estáveis.'
 topico_3 = 'Aplicações do jogo da vida'
-texto_3 ='Modelagem de padrões biológicos: O Jogo da Vida pode ser usado para modelar o \n' \
-        'comportamento de populações biológicas. Células vivas e mortas podem representar\n' \
-        'organismos, e as regras do jogo podem simular a competição, a reprodução e a \n' \
-        'sobrevivência desses organismos. Padrões complexos,como osciladores e espaçonaves,\n' \
-        'podem emergir e fornecer insights sobre a dinâmica das populações biológicas.\n' \
-        'Simulação de sistemas físicos: O Jogo da Vida pode ser usado para simular sistemas\n' \
-        'físicos, como a propagação de ondas ou a interação de partículas. As células podem\n' \
-        'representar pontos no espaço e as regras do jogo podem representar as interações\n' \
-        'entre esses pontos. Isso permite estudar o comportamento coletivo desses sistemas e\n' \
-        'observar como padrões se desenvolvem ao longo do tempo.\n' \
-        'Teste de algoritmos de computação paralela: O Jogo da Vida é frequentemente usado \n' \
-        'como um problema de teste para algoritmos de computação paralela. O jogo pode ser\n' \
-        'dividido em várias regiões independentes, permitindo que diferentes partes sejam\n' \
-        'processadas simultaneamente em diferentes threads ou processadores.Isso torna o jogo\n' \
-        'um excelente exemplo para estudar técnicas de programação paralela\n' \
-        'e distribuída.'
-subsection_1 ='Explicando o codigo'
-subsubsection_1 ='CRIANDO UMA "GRID"'
-exp_1 = 'Idealmente é necessario definirmos uma "grid" aonde definiremos quais pontos\n' \
-                'estão ativos, por simplicidade neste exercício vamos gerar aleatoriamente\n' \
-                'os pontos, de forma que celulas com valor de 0 serão consideradas ligadas\n' \
-                'e -1 desligadas. Observe o codigo abaixo:'
+texto_3 = 'Modelagem de padrões biológicos: O Jogo da Vida pode ser usado para modelar o \n' \
+          'comportamento de populações biológicas. Células vivas e mortas podem representar\n' \
+          'organismos, e as regras do jogo podem simular a competição, a reprodução e a \n' \
+          'sobrevivência desses organismos. Padrões complexos, como osciladores e espaçonaves,\n' \
+          'podem emergir e fornecer insights sobre a dinâmica das populações biológicas.\n' \
+          'Simulação de sistemas físicos: O Jogo da Vida pode ser usado para simular sistemas\n' \
+          'físicos, como a propagação de ondas ou a interação de partículas. As células podem\n' \
+          'representar pontos no espaço e as regras do jogo podem representar as interações\n' \
+          'entre esses pontos. Isso permite estudar o comportamento coletivo desses sistemas e\n' \
+          'observar como padrões se desenvolvem ao longo do tempo.\n' \
+          'Teste de algoritmos de computação paralela: O Jogo da Vida é frequentemente usado \n' \
+          'como um problema de teste para algoritmos de computação paralela. O jogo pode ser\n' \
+          'dividido em várias regiões independentes, permitindo que diferentes partes sejam\n' \
+          'processadas simultaneamente em diferentes threads ou processadores. Isso torna o jogo\n' \
+          'um excelente exemplo para estudar técnicas de programação paralela e distribuída.'
+subsection_1 = 'Explicando o código'
+subsubsection_1 = 'CRIANDO UMA "GRID"'
+exp_1 = 'Idealmente, é necessário definirmos uma "grid" onde definiremos quais pontos\n' \
+        'estão ativos. Por simplicidade neste exercício, vamos gerar aleatoriamente\n' \
+        'os pontos, de forma que as células com valor 0 serão consideradas desligadas\n' \
+        'e as células com valor -1 serão consideradas ligadas. Observe o código abaixo:'
 code_1 = '''
 import numpy as np 
 
 def create_grid(rows_cols, P):
     return np.random.choice([0, 1], size=(rows_cols, rows_cols), p=[1-P, P])
 '''
-exp_1_2 = 'Aqui geramos com a função "random.choice" do numpy, uma "grid" de pontos que são\n' \
-        '0 ou 1 e possuem dimenção rows_cols X rows_cols\n' \
-        'e probabilidade P dos pontos estarem ligados.'
+exp_1_2 = 'Aqui geramos, com a função "random.choice" do numpy, uma "grid" de pontos que são\n' \
+           '0 ou 1 e possuem dimensão rows_cols x rows_cols,\n' \
+           'com uma probabilidade P de os pontos estarem ligados.'
 code_1_2 = '''
 grid = create_grid(5, 0.2)
 grid.show()
 '''
 subsubsection_1_2 = 'ACHANDO VIZINHOS'
-exp_1_3 = 'O proximo passo agora seria aplicar as regras do jogo de Conway.\n' \
-        'Segundo o jogo se uma celula ativa esta cercada por 2 ou 3 outras\n' \
-        'celulas vivas ela pode continuar vivendo, caso contrario morre,\n' \
-        'se uma celula morta esta cercada por 3 vivas ela é ligada.\n' \
-        'Logo o passo logico agora seria criar uma função que conta\n' \
-        'as celulas vivas na vizinhança de um quadrado e aplica as\n' \
-        'condições do jogo.'
+exp_1_3 = 'O próximo passo agora seria aplicar as regras do jogo de Conway.\n' \
+          'Segundo o jogo, se uma célula ativa está cercada por 2 ou 3 outras\n' \
+          'células vivas, ela pode continuar viva. Caso contrário, morre.\n' \
+          'Se uma célula morta está cercada por 3 células vivas, ela é ligada.\n' \
+          'Logo, o passo lógico agora seria criar uma função que conta\n' \
+          'as células vivas na vizinhança de um quadrado e aplica as\n' \
+          'condições do jogo.'
 code_1_3 = '''
 def update_grid(grid):
     neighbours = np.zeros_like(grid)
@@ -179,35 +176,39 @@ def update_grid(grid):
 
     new_grid = np.where((grid == 1) & ((neighbours < 2) | (neighbours > 3)), 0, grid)
     new_grid = np.where((grid == 0) & (neighbours == 3), 1, new_grid)
-
     return new_grid
 '''
-exp_1_4 = 'Vamos olhar mais de perto o que eu considero a parte mais importante deste codigo,\n' \
-        'para contar os vizinhos de maneira rapida e eficiente resolvi pegar a matrix da grid\n' \
-        'e mudar ela inteira em um movimento circular para que possamos somar os valores\n' \
-        'laterais, a explicação visual a baixo ajudara a entender melhor. Segue o sequite\n' \
-        'codigo que mostra visualmente o que esta acontecendo:'
+exp_1_4 = 'Nessa função, utilizamos uma matriz auxiliar chamada "neighbours" para contar\n' \
+           'o número de células vivas ao redor de cada célula. Em seguida, aplicamos as\n' \
+           'regras do jogo usando a função "np.where" do numpy. Para células vivas que\n' \
+           'têm menos de 2 ou mais de 3 vizinhos vivos, elas morrem (valor 0). Para células\n' \
+           'mortas com exatamente 3 vizinhos vivos, elas se tornam vivas (valor 1).\n' \
+           'A nova "grid" resultante é retornada pela função.'
 code_1_4 = '''
-    for i in range(-1, 2):
-        for j in range(-1, 2):
-            if i == 0 and j == 0:
-                continue
-            new_grid = np.roll(np.roll(grid, i, axis=0), j, axis=1)
+new_grid = update_grid(grid)
+new_grid.show()
 '''
-exp_1_5 = 'Agora que vimos como podemos somar valores\n' \
-        'vizinhos vamos estabelecer nossas regras.'
+subsubsection_1_3 = 'EXECUTANDO O JOGO'
+exp_1_5 = 'Agora que temos as funções para criar a "grid" inicial e atualizá-la com base nas\n' \
+           'regras do jogo, podemos executar o jogo da vida. Podemos fazer isso chamando a\n' \
+           'função "create_grid" para gerar uma "grid" inicial e, em seguida, repetidamente\n' \
+           'chamar a função "update_grid" para atualizar a "grid" em cada etapa do jogo.'
 code_1_5 = '''
-    new_grid = np.where((grid == 1) & ((neighbours < 2) | (neighbours > 3)), 0, grid)
-    new_grid = np.where((grid == 0) & (neighbours == 3), 1, new_grid)
+grid = create_grid(5, 0.2)
+for _ in range(5):
+    grid = update_grid(grid)
+    grid.show()
 '''
-exp_1_6 = 'Nesta primeira linha estabelecemos se nossa celula esta ligada\n' \
-         ' e não tem 2 e nem 3 vizinhos proximos faça ela ser desligada\n' \
-         'e caso contrario apenas retorne o valor dela ( ela possui 2 ou 3 vizinhos),\n' \
-         'se ela esta deligada e tem 3 vizinhos ativos ela se torna ligada\n' \
-         'caso contrario apenas retorna seu valor. Agora vamos aplicar tudo\n' \
-         'e rodar o nosso jogo.'
-
-subsection_2 = 'O Jogo da vida de Conway!'
+exp_1_6 = 'Nesse exemplo, geramos uma "grid" inicial com a função "create_grid" e, em seguida,\n' \
+           'executamos o jogo por 5 etapas. A cada etapa, chamamos a função "update_grid" para\n' \
+           'atualizar a "grid" e exibimos o resultado usando o método "show".'
+subsection_2 = 'Considerações Finais'
+texto_2_1 = 'O jogo da vida de Conway é um exemplo fascinante de como um conjunto simples\n' \
+            'de regras pode levar a comportamentos complexos e imprevisíveis. Suas aplicações\n' \
+            'vão desde a modelagem de sistemas biológicos até o teste de algoritmos de\n' \
+            'computação paralela. Através do uso de autômatos celulares como o jogo da vida,\n' \
+            'podemos explorar e compreender melhor os padrões emergentes e a dinâmica dos\n' \
+            'sistemas complexos.'
 
 link = 'Download para Windows: https://drive.google.com/file/d/1R5AscSyugvoo3TKQ5MjTdkF7-C0aqMnx/view?usp=sharing'
 # end text
