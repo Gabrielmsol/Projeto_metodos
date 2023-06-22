@@ -101,14 +101,48 @@ def run_da_game(rows_cols, probability):
 
 # Text
 title = 'Jogo da vida de Conway'
-subsection = 'Quem foi Conway?'
-intro = 'Uma breve introdução sobre quem foi Conway\n' \
-        'blabla\n' \
-        'more bla bla'
-subsection_0 = 'Regras do jogo da vida'
-exp_0 = 'Uma breve explicação sobre as regras do jogo\n' \
-                'bla bla bla\n' \
-                'more bla bla bla'
+topico_0 = 'Introdução'
+texto_0 = 'Na década de 1940, John von Neumann, interessado em estudar como sistemas simples\n'\
+          'podem evoluir de forma complexa e padronizada, criou o conceito de autômato celular.\n'\
+          'Um autômato celular é modelo computacional composto por uma grade de células regular com\n'\
+          'um número finito de dimensões. Cada célula possui um número fixo de vizinhas e assume um\n'\
+          'estado discreto a cada etapa. A evolução do sistema se dá a partir de um conjunto de regras\n'\
+          'que determina o novo estado de uma célula a partir do estado atual de suas vizinhas.\n'\
+          'O jogo da vida é um autômato celular bidimensional criado por John Conway em 1970.\n'\
+          'Cada célula tem até oito células vizinhas fixas e deve assumir um estado (morta ou vida) a\n'\
+          'cada etapa da evolução do sistema.'
+
+topico_1 = 'Quem foi John Conway?'
+texto_1 = 'Jhon Horton Conway foi um grande matemático e cientista da computação inglês.\n' \
+        'Nascido em Liverpool, passou sua carreira na universidade de Cambridge, onde foi\n' \
+        'aluno doutorando e professor e pesquisador. John conway deixou um legaddo duradou,\n' \
+        'nos campos em que atuo, o seu trabalho com o jogo da vida lhe rendeu grandes frutos \n' \
+        'e reconhecimento.'
+topico_2 = 'Regras do jogo da vida'
+texto_2 = 'Uma breve explicação sobre as regras do jogo\n' \
+        'As regras do Jogo da Vida são as seguintes: uma célula viva com menos de dois\n' \
+        'vizinhos vivos morre por solidão; uma célula viva com dois ou três vizinhos vivos\n' \
+        'permanece viva; uma célula viva com mais de três vizinhos vivos morre de \n' \
+        'superpopulação; uma célula morta com exatamente três vizinhos vivos se torna viva.\n' \
+        'Com base nessas regras simples, padrões complexos e interessantes podem surgir no jogo,\n' \
+        'incluindo osciladores,espaçonaves e estruturas estáveis.'
+topico_3 = Aplicações do jogo da vida'
+texto_3 ='Modelagem de padrões biológicos: O Jogo da Vida pode ser usado para modelar o \n' \
+        'comportamento de populações biológicas. Células vivas e mortas podem representar\n' \
+        'organismos, e as regras do jogo podem simular a competição, a reprodução e a \n' \
+        'sobrevivência desses organismos. Padrões complexos,como osciladores e espaçonaves,\n' \
+        'podem emergir e fornecer insights sobre a dinâmica das populações biológicas.\n' \
+        'Simulação de sistemas físicos: O Jogo da Vida pode ser usado para simular sistemas\n' \
+        'físicos, como a propagação de ondas ou a interação de partículas. As células podem\n' \
+        'representar pontos no espaço e as regras do jogo podem representar as interações\n' \
+        'entre esses pontos. Isso permite estudar o comportamento coletivo desses sistemas e\n' \
+        'observar como padrões se desenvolvem ao longo do tempo.\n' \
+        'Teste de algoritmos de computação paralela: O Jogo da Vida é frequentemente usado \n' \
+        'como um problema de teste para algoritmos de computação paralela. O jogo pode ser\n' \
+        'dividido em várias regiões independentes, permitindo que diferentes partes sejam\n' \
+        'processadas simultaneamente em diferentes threads ou processadores.Isso torna o jogo\n' \
+        'um excelente exemplo para estudar técnicas de programação paralela\n' \
+        'e distribuída.'
 subsection_1 ='Explicando o codigo'
 subsubsection_1 ='CRIANDO UMA "GRID"'
 exp_1 = 'Idealmente é necessario definirmos uma "grid" aonde definiremos quais pontos\n' \
@@ -182,10 +216,14 @@ link = 'Download para Windows: https://drive.google.com/file/d/1R5AscSyugvoo3TKQ
 
 # Site code
 st.title(title)
-st.subheader(subsection)
-st.text(intro)
-st.subheader(subsection_0)
-st.text(exp_0)
+st.subheader(topico_0)
+st.text(texto_0)
+st.subheader(topico_1)
+st.text(texto_1)
+st.subheadder(topico_2)
+st.text(texto_2)
+st.subheadder(topico_3)
+st.text(texto_3)
 
 st.subheader(subsection_1)
 st.markdown(subsubsection_1)
