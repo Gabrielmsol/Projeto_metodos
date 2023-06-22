@@ -119,8 +119,7 @@ texto_1 = 'Jhon Horton Conway foi um grande matemático e cientista da computaç
         'nos campos em que atuo, o seu trabalho com o jogo da vida lhe rendeu grandes frutos \n' \
         'e reconhecimento.'
 topico_2 = 'Regras do jogo da vida'
-texto_2 = 'Uma breve explicação sobre as regras do jogo\n' \
-        'As regras do Jogo da Vida são as seguintes: uma célula viva com menos de dois\n' \
+texto_2 = 'As regras do Jogo da Vida são as seguintes: uma célula viva com menos de dois\n' \
         'vizinhos vivos morre por solidão; uma célula viva com dois ou três vizinhos vivos\n' \
         'permanece viva; uma célula viva com mais de três vizinhos vivos morre de \n' \
         'superpopulação; uma célula morta com exatamente três vizinhos vivos se torna viva.\n' \
