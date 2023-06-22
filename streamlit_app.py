@@ -125,7 +125,7 @@ texto_2 = 'As regras do Jogo da Vida são as seguintes: uma célula viva com men
         'superpopulação; uma célula morta com exatamente três vizinhos vivos se torna viva.\n' \
         'Com base nessas regras simples, padrões complexos e interessantes podem surgir no jogo,\n' \
         'incluindo osciladores,espaçonaves e estruturas estáveis.'
-topico_3 = Aplicações do jogo da vida'
+topico_3 = 'Aplicações do jogo da vida'
 texto_3 ='Modelagem de padrões biológicos: O Jogo da Vida pode ser usado para modelar o \n' \
         'comportamento de populações biológicas. Células vivas e mortas podem representar\n' \
         'organismos, e as regras do jogo podem simular a competição, a reprodução e a \n' \
